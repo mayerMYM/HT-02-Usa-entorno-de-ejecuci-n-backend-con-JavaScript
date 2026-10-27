@@ -4,11 +4,14 @@
   "description": "Backend CRUD en Node.js y MySQL",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "migrate": "node scripts/migrate.js",
+    "test:api": "node scripts/smoke-api.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
+    "dotenv": "^18.0.9",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.6.0"
